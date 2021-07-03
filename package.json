@@ -4,8 +4,8 @@
   "description": "Trainor pilot project",
   "main": "index.js",
   "scripts": {
-    "tailwind": "postcss src/tailwind.scss -o dist/tailwind.css --no-source-map",
-    "scss": "postcss src/style.scss -o dist/style.css --no-source-map",
+    "tailwind": "postcss src/tailwind.scss -o dist/css/tailwind.css --no-source-map",
+    "scss": "postcss src/style.scss -o dist/css/style.css --no-source-map",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "hod",
