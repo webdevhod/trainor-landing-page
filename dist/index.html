@@ -1,163 +1,177 @@
 <!doctype html>
 <html>
-<head>
-  <title>Trainor</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="css/tailwind.css" rel="stylesheet">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-  <header class="nav-bar shadow">
-    <div class="container py-10 mx-auto flex justify-between items-center">
-      <div class="nav-bar__visit hidden lg:block"><a href="#!" class="text-sm lg:text-base">Visit <span class="text-green-700 hover:text-green-600">adirondackbank.com</span></a></div>
-      <div class="nav-bar__logo w-1/2 lg:w-1/4 flex-shrink-0 pl-4 lg:pl-0">
-        <img src="images/header-logo.svg" alt="Adirondack Bank logo">
-      </div>
-      <ul class="nav-bar__menu hidden lg:flex justify-between">
-        <li class="nav-bar__menu-item"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Promotions & Offers</a></li>
-        <li class="nav-bar__menu-item px-7"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Latest News</a></li>
-        <li class="nav-bar__menu-item"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Locations</a></li>
-      </ul>
-      <div class="nav-bar__menu-icon lg:hidden mr-4 cursor-pointer">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </div>
-    </div>
-  </header>
-  <section class="jumbo pb-10 pt-20 shadow-xl">
-    <div class="jumbo__columns container md:flex mx-auto">
-      <div class="jumbo__left flex-1 flex items-center px-5">
-        <img src="images/jumbo-left.svg" alt="Computer security network">
-      </div>
-      <div class="jumbo__right flex-1 flex-col text-center justify-center px-5">
-        <img src="images/jumbo-right.svg" alt="Cybersecurity tips">
-        <button class="tips-button px-10 py-3 hover:text-gray-800 rounded-md mt-14 md:mt-20 mb-10 md:mb-0">Learn More</button>
-      </div>
-    </div>
-    <div class="jumbo__carousel-menu mx-auto w-16">
-        <img src="images/jumbo-carousel-menu.svg" alt="Carousel menu">
-    </div>
-  </section>
-  <section class="sections-container flex-col relative">
-    <div class="sections-container__bg-logo-container w-3/4 md:w-1/3 absolute right-0">
-        <img src="images/campaign-globe.svg" alt="Globe">
-    </div>
-    <section class="campaigns py-14">
-        <div class="container mx-auto w-3/4 md:w-100 xl:w-3/5 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
-            <div class="campaign shadow-lg rounded-md p-5 sm:col-span-2 lg:col-auto">
-                <div class="campaign__image-container px-20 py-14">
-                    <img src="images/campaign-image-placeholder.svg" alt="campaign placeholder">
-                </div>
-                <h5 class="campaign__title mt-5 text-center text-green-800">CAMPAIGN TITLE</h5>
-                <p class="campaign__description text-center mb-10 text-green-800">Lorem ipsum dolor sit amet, consectetur adipscing elit aliquam a urna est.</p>
-                <a class="campaign__link text-center" href="#!">
-                    <p class="campaign__link-text">Get Started</p>
-                    <div class="campaign__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></div>
-                </a>
+    <head>
+        <title>Adirondack Bank</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="css/tailwind.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- NAVBAR -->
+        <header class="nav-bar shadow">
+            <div class="container py-10 mx-auto flex justify-between items-center">
+            <div class="nav-bar__visit hidden lg:block"><a href="#!" class="text-sm lg:text-base">Visit <span class="text-green-700 hover:text-green-600">adirondackbank.com</span></a></div>
+            <div class="nav-bar__logo w-1/2 lg:w-1/4 flex-shrink-0 pl-4 lg:pl-0">
+                <img src="images/header-logo.svg" alt="Adirondack Bank logo">
             </div>
-            <div class="campaign shadow-lg rounded-md p-5 sm:col-span-2 lg:col-auto">
-                <div class="campaign__image-container px-20 py-14">
-                    <img src="images/campaign-image-placeholder.svg" alt="campaign placeholder">
-                </div>
-                <h5 class="campaign__title mt-5 text-center text-green-800">CAMPAIGN TITLE</h5>
-                <p class="campaign__description text-center mb-10 text-green-800">Lorem ipsum dolor sit amet, consectetur adipscing elit aliquam a urna est.</p>
-                <a class="campaign__link text-center" href="#!">
-                    <p class="campaign__link-text">Get Started</p>
-                    <div class="campaign__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></div>
-                </a>
+            <ul class="nav-bar__menu hidden lg:flex justify-between">
+                <li class="nav-bar__menu-item"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Promotions & Offers</a></li>
+                <li class="nav-bar__menu-item px-7"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Latest News</a></li>
+                <li class="nav-bar__menu-item"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Locations</a></li>
+            </ul>
+            <div class="nav-bar__menu-icon lg:hidden mr-4 cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
             </div>
-            <div class="campaign shadow-lg rounded-md p-5 sm:col-span-2 sm:col-start-2 lg:col-auto">
-                <div class="campaign__image-container px-20 py-14">
-                    <img src="images/campaign-image-placeholder.svg" alt="campaign placeholder">
-                </div>
-                <h5 class="campaign__title mt-5 text-center text-green-800">CAMPAIGN TITLE</h5>
-                <p class="campaign__description text-center mb-10 text-green-800">Lorem ipsum dolor sit amet, consectetur adipscing elit aliquam a urna est.</p>
-                <a class="campaign__link text-center" href="#!">
-                    <p class="campaign__link-text">Get Started</p>
-                    <div class="campaign__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></div>
-                </a>
             </div>
-        </div>
-    </section>
-    <section class="top-news-info mb-14">
-        <div class="top-news-info__divider bg-green-700 rounded-r-3xl w-3/4 md:w-2/3 py-2 pr-5 text-right flex justify-end items-center mb-14">
-            <span class="top-news-info__divider-title text-white text-xs sm:text-sm md:text-2xl">Top News & Information</span>
+        </header>
+
+        <!-- JUMBO -->
+        <section class="jumbo pb-10 pt-20 shadow-xl">
+            <div class="jumbo__columns container md:flex mx-auto">
+            <div class="jumbo__left flex-1 flex items-center px-5">
+                <img src="images/jumbo-left.svg" alt="Computer security network">
+            </div>
+            <div class="jumbo__right flex-1 flex-col text-center justify-center px-5">
+                <img src="images/jumbo-right.svg" alt="Cybersecurity tips">
+                <button class="tips-button px-10 py-3 hover:text-gray-800 rounded-md mt-14 md:mt-20 mb-10 md:mb-0">Learn More</button>
+            </div>
+            </div>
+            <div class="jumbo__carousel-menu mx-auto w-16">
+                <img src="images/jumbo-carousel-menu.svg" alt="Carousel menu">
+            </div>
+        </section>
+
+        <!-- GLOBE SECTION -->
+        <section class="sections-container flex-col relative">
+            <!-- GLOBE CONTAINER -->
+            <div class="sections-container__bg-logo-container w-3/4 md:w-1/3 absolute right-0">
+                <img src="images/campaign-globe.svg" alt="Globe">
+            </div>
+
+            <!-- CAMPAIGNS -->
+            <section class="campaigns py-14">
+                <div class="container mx-auto w-3/4 md:w-100 xl:w-3/5 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
+                    <div class="campaign shadow-lg rounded-md p-5 sm:col-span-2 lg:col-auto">
+                        <div class="campaign__image-container px-20 py-14">
+                            <img src="images/campaign-image-placeholder.svg" alt="campaign placeholder">
+                        </div>
+                        <h5 class="campaign__title mt-5 text-center text-green-800">CAMPAIGN TITLE</h5>
+                        <p class="campaign__description text-center mb-10 text-green-800">Lorem ipsum dolor sit amet, consectetur adipscing elit aliquam a urna est.</p>
+                        <a class="campaign__link text-center" href="#!">
+                            <p class="campaign__link-text">Get Started</p>
+                            <div class="campaign__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></div>
+                        </a>
+                    </div>
+                    <div class="campaign shadow-lg rounded-md p-5 sm:col-span-2 lg:col-auto">
+                        <div class="campaign__image-container px-20 py-14">
+                            <img src="images/campaign-image-placeholder.svg" alt="campaign placeholder">
+                        </div>
+                        <h5 class="campaign__title mt-5 text-center text-green-800">CAMPAIGN TITLE</h5>
+                        <p class="campaign__description text-center mb-10 text-green-800">Lorem ipsum dolor sit amet, consectetur adipscing elit aliquam a urna est.</p>
+                        <a class="campaign__link text-center" href="#!">
+                            <p class="campaign__link-text">Get Started</p>
+                            <div class="campaign__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></div>
+                        </a>
+                    </div>
+                    <div class="campaign shadow-lg rounded-md p-5 sm:col-span-2 sm:col-start-2 lg:col-auto">
+                        <div class="campaign__image-container px-20 py-14">
+                            <img src="images/campaign-image-placeholder.svg" alt="campaign placeholder">
+                        </div>
+                        <h5 class="campaign__title mt-5 text-center text-green-800">CAMPAIGN TITLE</h5>
+                        <p class="campaign__description text-center mb-10 text-green-800">Lorem ipsum dolor sit amet, consectetur adipscing elit aliquam a urna est.</p>
+                        <a class="campaign__link text-center" href="#!">
+                            <p class="campaign__link-text">Get Started</p>
+                            <div class="campaign__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TOP NEWS & INFO -->
+            <section class="top-news-info mb-14">
+                <div class="top-news-info__divider bg-green-700 rounded-r-3xl w-3/4 md:w-2/3 py-2 pr-5 text-right flex justify-end items-center mb-14">
+                    <span class="top-news-info__divider-title text-white text-xs sm:text-sm md:text-2xl">Top News & Information</span>
+                    <span class="top-news-info__divider-icon rounded-full w-6 h-6 bg-white flex items-center justify-center text-gray-300 ml-5 md:ml-14">></span>
+                </div>
+                <div class="container mx-auto w-3/4 md:w-100 xl:w-3/5 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
+                    <div class="news shadow-lg rounded-md p-5 col-span-2 lg:col-auto">
+                        <div class="news__image-container px-8 py-6">
+                            <img src="images/news-ppp.svg" alt="PPP EZ Loan Forgiveness">
+                        </div>
+                        <h5 class="news__title mt-5 mb-6 text-green-800">PPP EZ Loan Forgiveness Form - Instructions, Checklist, & Application</h5>
+                        <p class="news__description text-sm leading-6 mb-5">You (the Borrower) can apply for forgiveness of your Paycheck Protection Program (PPP)...</p>
+                        <a class="news__link" href="#!">
+                            <button class="news__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></button>
+                        </a>
+                    </div>
+                    <div class="news shadow-lg rounded-md p-5 col-span-2 lg:col-auto">
+                        <div class="news__image-container px-8 py-6">
+                            <img src="images/news-ppp.svg" alt="PPP EZ Loan Forgiveness">
+                        </div>
+                        <h5 class="news__title mt-5 mb-6 text-green-800">PPP EZ Loan Forgiveness Form - Instructions, Checklist, & Application</h5>
+                        <p class="news__description text-sm leading-6 mb-5">You (the Borrower) can apply for forgiveness of your Paycheck Protection Program (PPP)...</p>
+                        <a class="news__link" href="#!">
+                            <button class="news__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></button>
+                        </a>
+                    </div>
+                    <div class="news shadow-lg rounded-md p-5 sm:col-start-2 col-span-2 lg:col-auto">
+                        <div class="news__image-container px-14 py-5">
+                            <img src="images/news-smiley-face.svg" alt="smiley face">
+                        </div>
+                        <h5 class="news__title mt-5 mb-6 text-green-800">Branch Lobbies<br/>Now Open</h5>
+                        <p class="news__description text-sm leading-6 mb-5">We're so happy to see you again! Our branches have re-opened effective April 19, 2021, with normal business hours...</p>
+                        <a class="news__link" href="#!">
+                            <button class="news__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- FIND ATM -->
+        <section class="find-branch-atm relative">
+            <div class="find-branch-atm__divider bg-green-700 rounded-l-3xl w-3/4 lg:w-1/2 py-2 pr-5 text-right flex items-center absolute right-0">
+            <span class="find-branch-atm__divider-title text-white text-sm md:text-xl xl:text-2xl float-right pl-4 lg:pl-7 mr-5">Find a Branch or ATM</span>
+            <input type="text" placeholder="Enter Zip" class="pl-3 hidden sm:block">
             <span class="top-news-info__divider-icon rounded-full w-6 h-6 bg-white flex items-center justify-center text-gray-300 ml-5 md:ml-14">></span>
-        </div>
-        <div class="container mx-auto w-3/4 md:w-100 xl:w-3/5 grid grid-cols-1 sm:grid-cols-4 lg:grid-cols-3 gap-5">
-            <div class="news shadow-lg rounded-md p-5 col-span-2 lg:col-auto">
-                <div class="news__image-container px-8 py-6">
-                    <img src="images/news-ppp.svg" alt="PPP EZ Loan Forgiveness">
+            </div>
+            <div class="find-branch-atm__map-container w-full pt-6">
+            <img src="images/atm-map.svg" alt="Map of ATM branches">
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer pt-14 pb-8">
+            <div class="container mx-auto">
+                <div class="footer__logo w-1/3 lg:w-1/5 mx-auto">
+                    <img src="images/footer-logo.svg" alt="Adirondack Bank logo">
                 </div>
-                <h5 class="news__title mt-5 mb-6 text-green-800">PPP EZ Loan Forgiveness Form - Instructions, Checklist, & Application</h5>
-                <p class="news__description text-sm leading-6 mb-5">You (the Borrower) can apply for forgiveness of your Paycheck Protection Program (PPP)...</p>
-                <a class="news__link" href="#!">
-                    <button class="news__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></button>
-                </a>
-            </div>
-            <div class="news shadow-lg rounded-md p-5 col-span-2 lg:col-auto">
-                <div class="news__image-container px-8 py-6">
-                    <img src="images/news-ppp.svg" alt="PPP EZ Loan Forgiveness">
+                <hr class="footer__divider w-1/3 mx-auto my-8 lg:my-10 border-black" />
+                <div class="footer__columns container mx-auto grid grid-cols-1 lg:grid-cols-3">
+                    <div class="footer__column flex-1 flex items-center justify-center lg:justify-start">   
+                        <img src="images/footer-fdic-logo.svg" alt="FDIC">
+                    </div>
+                    <div class="footer__column flex-1 text-center flex-col justify-center my-5 lg:my-0">
+                        <span class="address address--line1">185 Genesse Street</span><br />
+                        <span class="address">Utica, NY 13501</span>
+                    </div>
+                    <div class="footer__column flex-1 flex justify-center lg:justify-end items-center">Digital by TRAINOR</div>
                 </div>
-                <h5 class="news__title mt-5 mb-6 text-green-800">PPP EZ Loan Forgiveness Form - Instructions, Checklist, & Application</h5>
-                <p class="news__description text-sm leading-6 mb-5">You (the Borrower) can apply for forgiveness of your Paycheck Protection Program (PPP)...</p>
-                <a class="news__link" href="#!">
-                    <button class="news__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></button>
-                </a>
-            </div>
-            <div class="news shadow-lg rounded-md p-5 sm:col-start-2 col-span-2 lg:col-auto">
-                <div class="news__image-container px-14 py-5">
-                    <img src="images/news-smiley-face.svg" alt="smiley face">
+                <div class="footer__subfooter flex w-100 lg:w-1/3 mt-6 lg:mt-4">
+                    <div class="footer__column flex-1 text-center">
+                        <a href="#!" class="text-sm">Privacy Policy</a>
+                    </div>
+                    <div class="footer__column flex-1 text-center">
+                        <a href="#!" class="text-sm">Cookie Policy</a>
+                    </div>
+                    <div class="footer__column flex-1 text-center">
+                        <a href="#!" class="text-sm">Terms & Conditions</a>
+                    </div>
                 </div>
-                <h5 class="news__title mt-5 mb-6 text-green-800">Branch Lobbies<br/>Now Open</h5>
-                <p class="news__description text-sm leading-6 mb-5">We're so happy to see you again! Our branches have re-opened effective April 19, 2021, with normal business hours...</p>
-                <a class="news__link" href="#!">
-                    <button class="news__link-button text-center bg-green-800 rounded-full h-10 w-10 flex items-center justify-center text-2xl mx-auto hover:text-gray-600 mt-1">></button>
-                </a>
             </div>
-        </div>
-    </section>
-    </section>
-  <section class="find-branch-atm relative">
-    <div class="find-branch-atm__divider bg-green-700 rounded-l-3xl w-3/4 lg:w-1/2 py-2 pr-5 text-right flex items-center absolute right-0">
-      <span class="find-branch-atm__divider-title text-white text-sm md:text-xl xl:text-2xl float-right pl-4 lg:pl-7 mr-5">Find a Branch or ATM</span>
-      <input type="text" placeholder="Enter Zip" class="pl-3 hidden sm:block">
-      <span class="top-news-info__divider-icon rounded-full w-6 h-6 bg-white flex items-center justify-center text-gray-300 ml-5 md:ml-14">></span>
-    </div>
-    <div class="find-branch-atm__map-container w-full pt-6">
-      <img src="images/atm-map.svg" alt="Map of ATM branches">
-    </div>
-  </section>
-  <footer class="footer pt-14 pb-8">
-    <div class="container mx-auto">
-        <div class="footer__logo w-1/3 lg:w-1/5 mx-auto">
-            <img src="images/footer-logo.svg" alt="Adirondack Bank logo">
-        </div>
-        <hr class="footer__divider w-1/3 mx-auto my-8 lg:my-10 border-black" />
-        <div class="footer__columns container mx-auto grid grid-cols-1 lg:grid-cols-3">
-            <div class="footer__column flex-1 flex items-center justify-center lg:justify-start">   
-                <img src="images/footer-fdic-logo.svg" alt="FDIC">
-            </div>
-            <div class="footer__column flex-1 text-center flex-col justify-center my-5 lg:my-0">
-                <span class="address address--line1">185 Genesse Street</span><br />
-                <span class="address">Utica, NY 13501</span>
-            </div>
-            <div class="footer__column flex-1 flex justify-center lg:justify-end items-center">Digital by TRAINOR</div>
-        </div>
-        <div class="footer__subfooter flex w-100 lg:w-1/3 mt-6 lg:mt-4">
-            <div class="footer__column flex-1 text-center">
-                <a href="#!" class="text-sm">Privacy Policy</a>
-            </div>
-            <div class="footer__column flex-1 text-center">
-                <a href="#!" class="text-sm">Cookie Policy</a>
-            </div>
-            <div class="footer__column flex-1 text-center">
-                <a href="#!" class="text-sm">Terms & Conditions</a>
-            </div>
-        </div>
-    </div>
-  </footer>
-</body>
+        </footer>
+    </body>
 </html>
