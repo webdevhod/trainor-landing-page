@@ -1,0 +1,22 @@
+{
+  "name": "trainor-landing-page",
+  "version": "1.0.0",
+  "description": "Trainor pilot project",
+  "main": "index.js",
+  "scripts": {
+    "tailwind": "postcss src/tailwind.scss -o dist/tailwind.css --no-source-map",
+    "scss": "postcss src/style.scss -o dist/style.css --no-source-map",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hod",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-import": "^14.0.2",
+    "postcss-nested": "^5.0.5",
+    "postcss-scss": "^4.0.0",
+    "tailwindcss": "^2.2.4"
+  }
+}
