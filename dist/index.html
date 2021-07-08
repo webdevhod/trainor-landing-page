@@ -20,7 +20,7 @@
                 <div class="nav-bar__logo w-1/2 lg:w-1/4">
                     <img src="images/header-logo.svg" alt="Adirondack Bank logo">
                 </div>
-                <div class="nav-bar__menu-icon lg:hidden mr-4 cursor-pointer flex justify-end">
+                <div class="nav-bar__menu-icon lg:hidden mr-4 flex justify-end">
                     <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white" @click="mobileMenuOpen = !mobileMenuOpen">
                         <span class="sr-only">Open main menu</span>
                         <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
@@ -30,7 +30,7 @@
                         </div>
                     </button>
                 </div>
-                <ul class="nav-bar__menu justify-between bg-white flex flex-col lg:flex-row pt-7 px-5 lg:p-0 bg-white" @click.away="mobileMenuOpen = false" :class="{'nav-bar__menu--active': mobileMenuOpen}">
+                <ul class="nav-bar__menu justify-between bg-white flex flex-col lg:flex-row lg:p-0" @click.away="mobileMenuOpen = false" :class="{'nav-bar__menu--active': mobileMenuOpen}">
                     <li class="nav-bar__menu-item py-1 lg:py-0">
                         <a href="#!" class="nav-bar__menu-link text-md lg:text-base text-green-700 hover:text-green-600">Promotions & Offers</a>
                     </li>

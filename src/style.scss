@@ -5,11 +5,27 @@
 
   &__menu {
     display: none;
+    pointer-events: none;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0;
+    transition: all .1s ease-in-out;
+    // flex-shrink: 12;
     flex-basis: 100%;
-
+    // flex-basis: 0;
+    
     &--active {
-      display: block;
+      // flex-shrink: 0;
+      padding: 1.7rem 1.25rem 0;
+      pointer-events: auto;
+      max-height: 8rem;
+      transition: all .1s ease-in-out;
+      display: flex;
     }
+  }
+  &__menu-icon {
+    cursor: pointer;
+    z-index: 1;
   }
 }
 
@@ -80,8 +96,10 @@
 @media (min-width: 1024px) {
   .nav-bar {
     &__menu {
+      pointer-events: auto;
       display: flex;
       flex-basis: auto;
+      max-height: 3rem;
     }
   }
 
