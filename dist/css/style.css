@@ -1,6 +1,13 @@
 .nav-bar__logo {
     cursor: pointer;
   }
+  .nav-bar__menu {
+    display: none;
+    flex-basis: 100%;
+  }
+  .nav-bar__menu--active {
+      display: block;
+    }
 
 .jumbo {
   background-color: #0C1526;
@@ -56,6 +63,17 @@
       display: flex;
       justify-content: center;
     }
+
+/* large*/
+
+@media (min-width: 1024px) {
+    .nav-bar__menu {
+      display: flex;
+      flex-basis: auto;
+    }
+}
+
+/* medium*/
 
 @media (min-width: 640px) {
     .sections-container__bg-logo-container {

@@ -2,6 +2,15 @@
   &__logo {
     cursor: pointer;
   }
+
+  &__menu {
+    display: none;
+    flex-basis: 100%;
+
+    &--active {
+      display: block;
+    }
+  }
 }
 
 .jumbo {
@@ -67,7 +76,18 @@
     }
   }
 }
+// large
+@media (min-width: 1024px) {
+  .nav-bar {
+    &__menu {
+      display: flex;
+      flex-basis: auto;
+    }
+  }
 
+}
+
+// medium
 @media (min-width: 640px) {
   .sections-container {
     &__bg-logo-container {

@@ -6,25 +6,41 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="css/tailwind.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     </head>
     <body>
         <!-- NAVBAR -->
-        <header class="nav-bar shadow">
-            <div class="container py-10 mx-auto flex justify-between items-center">
-            <div class="nav-bar__visit hidden lg:block"><a href="#!" class="text-sm lg:text-base">Visit <span class="text-green-700 hover:text-green-600">adirondackbank.com</span></a></div>
-            <div class="nav-bar__logo w-1/2 lg:w-1/4 flex-shrink-0 pl-4 lg:pl-0">
-                <img src="images/header-logo.svg" alt="Adirondack Bank logo">
-            </div>
-            <ul class="nav-bar__menu hidden lg:flex justify-between">
-                <li class="nav-bar__menu-item"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Promotions & Offers</a></li>
-                <li class="nav-bar__menu-item px-7"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Latest News</a></li>
-                <li class="nav-bar__menu-item"><a href="#!" class="nav-bar__menu-link text-sm lg:text-base text-green-700 hover:text-green-600">Locations</a></li>
-            </ul>
-            <div class="nav-bar__menu-icon lg:hidden mr-4 cursor-pointer">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </div>
+        <header class="nav-bar shadow" x-data="{ mobileMenuOpen : false }" >
+            <div class="container py-10 mx-auto justify-between items-center flex flex-wrap">
+                <div class="nav-bar__visit">
+                    <a href="#!" class="text-sm lg:text-base hidden lg:block">
+                        Visit <span class="text-green-700 hover:text-green-600">adirondackbank.com</span>
+                    </a>
+                </div>
+                <div class="nav-bar__logo w-1/2 lg:w-1/4">
+                    <img src="images/header-logo.svg" alt="Adirondack Bank logo">
+                </div>
+                <div class="nav-bar__menu-icon lg:hidden mr-4 cursor-pointer flex justify-end">
+                    <button class="text-gray-500 w-10 h-10 relative focus:outline-none bg-white" @click="mobileMenuOpen = !mobileMenuOpen">
+                        <span class="sr-only">Open main menu</span>
+                        <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                            <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': mobileMenuOpen, ' -translate-y-1.5': !mobileMenuOpen }"></span>
+                            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': mobileMenuOpen } "></span>
+                            <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': mobileMenuOpen, ' translate-y-1.5': !mobileMenuOpen}"></span>
+                        </div>
+                    </button>
+                </div>
+                <ul class="nav-bar__menu justify-between bg-white flex flex-col lg:flex-row pt-7 px-5 lg:p-0 bg-white" @click.away="mobileMenuOpen = false" :class="{'nav-bar__menu--active': mobileMenuOpen}">
+                    <li class="nav-bar__menu-item py-1 lg:py-0">
+                        <a href="#!" class="nav-bar__menu-link text-md lg:text-base text-green-700 hover:text-green-600">Promotions & Offers</a>
+                    </li>
+                    <li class="nav-bar__menu-item py-1 lg:py-0 lg:px-7">
+                        <a href="#!" class="nav-bar__menu-link text-md lg:text-base text-green-700 hover:text-green-600">Latest News</a>
+                    </li>
+                    <li class="nav-bar__menu-item pt-1 lg:py-0">
+                        <a href="#!" class="nav-bar__menu-link text-md lg:text-base text-green-700 hover:text-green-600">Locations</a>
+                    </li>
+                </ul>
             </div>
         </header>
 
@@ -34,7 +50,7 @@
             <div class="jumbo__left flex-1 flex items-center px-5">
                 <img src="images/jumbo-left.svg" alt="Computer security network">
             </div>
-            <div class="jumbo__right flex-1 flex-col text-center justify-center px-5">
+            <div class="jumbo__right flex-1 flex-col flex items-center justify-center px-6 pt-16 lg:pt-0">
                 <img src="images/jumbo-right.svg" alt="Cybersecurity tips">
                 <button class="tips-button px-10 py-3 hover:text-gray-800 rounded-md mt-14 md:mt-20 mb-10 md:mb-0">Learn More</button>
             </div>
